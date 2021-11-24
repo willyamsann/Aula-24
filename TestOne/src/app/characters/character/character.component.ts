@@ -9,6 +9,7 @@ export class CharacterComponent implements OnInit {
 
   @Input()
   character: any;
+  
   constructor() { }
 
   ngOnInit(): void {
