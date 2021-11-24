@@ -7,12 +7,14 @@ import { CharactersApiService } from './character/shared/characters-api.service'
   styleUrls: ['./characters.component.scss']
 })
 export class CharactersComponent implements OnInit {
-  allCharacters: Observable<any>;
+  allCharacters?: Observable<any>;
 
   constructor(private characterSvc: CharactersApiService) { }
 
   ngOnInit(): void {
+    this.getCharacters();
   }
+  
   getCharacters(){
     this.allCharacters = this.characterSvc.getAllCharacteres();
   }

@@ -11,8 +11,10 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
+import { HttpClientModule } from '@angular/common/http';
 import { CharacterComponent } from './characters/character/character.component';
 import { CharactersComponent } from './characters/characters.component';
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -29,8 +31,10 @@ import { CharactersComponent } from './characters/characters.component';
     MatToolbarModule,
     MatButtonModule,
     MatSidenavModule,
+    HttpClientModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
