@@ -15,13 +15,20 @@ import { HttpClientModule } from '@angular/common/http';
 import { CharacterComponent } from './characters/character/character.component';
 import { CharactersComponent } from './characters/characters.component';
 import {MatCardModule} from '@angular/material/card';
+import { TesteComponent } from './teste/teste.component';
+import { TableComponent } from './table/table.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     CharacterComponent,
-    CharactersComponent
+    CharactersComponent,
+    TesteComponent,
+    TableComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +41,10 @@ import {MatCardModule} from '@angular/material/card';
     HttpClientModule,
     MatIconModule,
     MatListModule,
-    MatCardModule
+    MatCardModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule
   ],
   providers: [],
   bootstrap: [AppComponent]
